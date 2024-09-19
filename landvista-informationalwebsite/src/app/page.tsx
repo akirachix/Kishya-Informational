@@ -1,10 +1,17 @@
+
 import Image from "next/image";
-import Footer from "./footer";
+import Footer from "./components/footer";
+import LandingPage from "./components/Landing";
+import Navbar from "./components/Navbar";
+import TeamSection from "./components/Team";
 
 export default function Home() {
   return (
-    <div >
-      <Footer/>
-          </div>
+    <main>
+     <Navbar/>
+     <LandingPage/>
+     <TeamSection/>
+     <Footer/>
+    </main>
   );
 }
