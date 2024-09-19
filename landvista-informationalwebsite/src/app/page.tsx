@@ -1,12 +1,13 @@
-import Image from "next/image";
-import Navbar from "./Navbar";
-import LandingPage from "./Landing";
+import LandingPage from "./components/Landing";
+import Navbar from "./components/Navbar";
+import TeamSection from "./components/Team";
 
 export default function Home() {
   return (
-    <div>
+    <main>
      <Navbar/>
      <LandingPage/>
-    </div>
+     <TeamSection/>
+    </main>
   );
 }

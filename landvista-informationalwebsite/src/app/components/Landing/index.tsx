@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 
+
 const LandingPage: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
@@ -20,7 +21,7 @@ const LandingPage: React.FC = () => {
   ];
 
   useEffect(() => {
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'unset';
 
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
