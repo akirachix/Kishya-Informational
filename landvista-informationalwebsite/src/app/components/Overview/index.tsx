@@ -41,7 +41,7 @@ const Overview = () => {
           />
           <h2 className="text-lg sm:text-4xl mb-6 text-center font-semibold">Testing</h2>
           <p className="text-base sm:text-sm md:text-2xl text-center">
-            Assessing how well the model generalizes to new data by measuring metrics such as accuracy and precision, and analyzing the model's predictions to identify any biases or errors.
+            Assessing how well the model generalizes to new data by measuring metrics such as accuracy and precision, and analyzing the model&apos;s predictions to identify any biases or errors.
           </p>
         </div>
 
