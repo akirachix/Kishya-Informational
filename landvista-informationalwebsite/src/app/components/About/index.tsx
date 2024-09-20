@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({
-  weight: ['500', '700'],
+  weight: ['300', '600'],
   subsets: ['latin'],
   display: 'swap',
 });
@@ -30,7 +30,7 @@ const LandvistaAbout: React.FC = () => {
               className="h-42 w-full  rounded-[2rem] md:h-[330px] md:w-[600px] mx-auto" 
             />
           </div>
-          <div className={`md:w-full border-4 border-[#008080] p-8 md:p-12 rounded-[1rem] text-2xl md:text-4xl order-2`}>
+          <div className={`md:w-full border-4 border-[#008080] p-8 md:p-12 rounded-[1rem] text-xl md:text-4xl order-2`}>
             <p className='text-lg md:text-3xl xl:text-3xl'>
               The LandVista Flood Risk Assessment System is a web portal providing flood risk evaluations for lands in Nairobi.
               It features an intuitive interface for homeowners and developers, integrating advanced flood prediction models and
