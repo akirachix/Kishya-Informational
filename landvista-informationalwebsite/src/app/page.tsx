@@ -1,8 +1,8 @@
 
 import LandvistaAbout from "./components/About";
-import Overview from "./components/overview";
+import Overview from "./components/Overview";
 import Image from "next/image";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import LandingPage from "./components/Landing";
 import Navbar from "./components/Navbar";
 import TeamSection from "./components/Team";
