@@ -36,7 +36,7 @@ export default function Navbar() {
             <Link href="#about" className="text-black hover:text-[#CA7558] hover:underline py-1 px-1 transition duration-300">About Us</Link>
             <Link href="#overview" className="text-black hover:text-[#CA7558] hover:underline py-1 px-1 transition duration-300">Overview</Link>
             <Link href="#team" className="text-black hover:text-[#CA7558] hover:underline py-1 px-1 transition duration-300">Team</Link>
-            <Link href="/contacts" className="text-black hover:text-[#CA7558] hover:underline py-1 px-1 transition duration-300">Contacts</Link>
+            <Link href="#contacts" className="text-black hover:text-[#CA7558] hover:underline py-1 px-1 transition duration-300">Contacts</Link>
            
             <Link 
               href="/portal" 
@@ -62,7 +62,7 @@ export default function Navbar() {
                 <Link href="#about" className="block text-black hover:text-[#CA7558] hover:underline py-1 px-2 transition duration-300" onClick={() => setIsOpen(false)}>About Us</Link>
                 <Link href="#overview" className="block text-black hover:text-[#CA7558] hover:underline py-1 px-2 transition duration-300" onClick={() => setIsOpen(false)}>Overview</Link>
                 <Link href="#team" className="block text-black hover:text-[#CA7558] hover:underline py-1 px-2 transition duration-300" onClick={() => setIsOpen(false)}>Team</Link>
-                <Link href="/contacts" className="block text-black hover:text-[#CA7558] hover:underline py-1 px-2 transition duration-300" onClick={() => setIsOpen(false)}>Contacts</Link>
+                <Link href="#contacts" className="block text-black hover:text-[#CA7558] hover:underline py-1 px-2 transition duration-300" onClick={() => setIsOpen(false)}>Contacts</Link>
                 <Link 
                   href="/portal" 
                   className="bg-teal-500 text-white rounded-full px-2 py-1 hover:bg-[#CA7558] transition duration-300 text-sm lg:text-xs"
