@@ -1,15 +1,19 @@
 
+import LandvistaAbout from "./components/About";
+import Overview from "./components/Overview";
 import Image from "next/image";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import LandingPage from "./components/Landing";
 import Navbar from "./components/Navbar";
 import TeamSection from "./components/Team";
 
-export default function Home() {
-  return (
+export default function Landvista(){
+  return(
     <main>
      <Navbar/>
      <LandingPage/>
+    <LandvistaAbout/>
+    <Overview/>
      <TeamSection/>
      <Footer/>
     </main>
