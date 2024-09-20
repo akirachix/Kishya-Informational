@@ -21,13 +21,16 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+          
       - name: Install dependencies
         working-directory: ./landvista-informationalwebsite
         run: npm install
+        
       - name: Build Next.js project
         working-directory: ./landvista-informationalwebsite
         run: npm run build
@@ -39,17 +42,22 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        
       - name: Install Vercel CLI
         working-directory: ./landvista-informationalwebsite
         run: npm install --global vercel@latest
+        
       - name: Pull Vercel Environment Information
         working-directory: ./landvista-informationalwebsite
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+        
       - name: Build Project Artifacts for Vercel
         working-directory: ./landvista-informationalwebsite
         run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+        
       - name: Deploy Project Artifacts to Vercel
         working-directory: ./landvista-informationalwebsite
         run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+        
       - name: Notify Deployment Success
         run: echo "Deployment to Vercel successful!"
