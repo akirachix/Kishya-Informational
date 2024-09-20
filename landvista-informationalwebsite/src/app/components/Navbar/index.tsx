@@ -40,8 +40,8 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center space-x-8 text-lg lg:text-xl xl:text-3xl text-black" style={{ fontFamily: '"Darker Grotesque"' }}>
             <Link href="/" className="text-black hover:text-[#CA7558] hover:underline py-1 px-2 transition duration-300">Home</Link>
-            <Link href="#operation" className="text-black hover:text-[#CA7558] hover:underline py-1 px-2 transition duration-300">Operation</Link>
             <Link href="#about" className="text-black hover:text-[#CA7558] hover:underline py-1 px-2 transition duration-300">About Us</Link>
+            <Link href="#overview" className="text-black hover:text-[#CA7558] hover:underline py-1 px-2 transition duration-300">Overview</Link>
             <Link href="#team" className="text-black hover:text-[#CA7558] hover:underline py-1 px-2 transition duration-300">Team</Link>
             <Link href="#contacts" className="text-black hover:text-[#CA7558] hover:underline py-1 px-2 transition duration-300">Contacts</Link>
             <Link
