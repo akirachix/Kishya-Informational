@@ -1,4 +1,181 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+       font-family: 'Poppins', sans-serif;
+     }
+
+@layer components {
+    .custom-footer {
+      @apply bg-teal-600 text-white;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+    }
+  }
+
+/* Default styles for headings */
+.heading-main {
+  font-size: 2rem; /* Default size for larger screens */
+}
+
+.heading-sub {
+  font-size: 1.5rem; /* Default size for larger screens */
+}
+
+/* 412 x 914 */
+@media (max-width: 412px) and (max-height: 914px) {
+  .heading-main {
+    font-size: 1.75rem; 
+  }
+  .heading-sub {
+    font-size: 1.25rem;
+  }
+}
+
+/* 853 x 1280 */
+@media (max-width: 853px) and (max-height: 1280px) {
+  .heading-main {
+    font-size: 5rem; 
+  }
+  .heading-sub {
+    font-size: 1.5rem; 
+  }
+}
+
+/* 344 x 882 */
+@media (max-width: 344px) and (max-height: 882px) {
+  .heading-main {
+    font-size: 1.5rem; 
+  }
+  .heading-sub {
+    font-size: 1rem;
+  }
+}
+
+/* 540 x 720 */
+@media (max-width: 540px) and (max-height: 720px) {
+  .heading-main {
+    font-size: 1.875rem; 
+  }
+  .heading-sub {
+    font-size: 1.25rem; 
+  }
+}
+
+/* 912 x 1368 */
+@media (max-width: 912px) and (max-height: 1368px) {
+  .heading-main {
+    font-size: 3.25rem;
+  }
+  .heading-sub {
+    font-size: 1.75rem;
+  }
+}
+
+/* 1024 x 1366 */
+@media (max-width: 1024px) and (max-height: 1366px) {
+  .heading-main {
+    font-size: 2.5rem; 
+  }
+  .heading-sub {
+    font-size: 1.875rem; 
+  }
+}
+
+/* 820 x 1180 */
+@media (max-width: 820px) and (max-height: 1180px) {
+  .heading-main {
+    font-size: 4rem; 
+  }
+  .heading-sub {
+    font-size: 1.5rem; 
+  }
+}
+
+/* 768 x 1024 */
+@media (max-width: 768px) and (max-height: 1024px) {
+  .heading-main {
+    font-size: 2rem; 
+  }
+  .heading-sub {
+    font-size: 1.5rem; 
+  }
+}
+
+/* 412 x 915 */
+@media (max-width: 412px) and (max-height: 915px) {
+  .heading-main {
+    font-size: 1.75rem; 
+  }
+  .heading-sub {
+    font-size: 1.25rem; 
+  }
+}
+
+/* 360 x 740 */
+@media (max-width: 360px) and (max-height: 740px) {
+  .heading-main {
+    font-size: 1.5rem; 
+  }
+  .heading-sub {
+    font-size: 1rem; 
+  }
+}
+
+/* 430 x 932 */
+@media (max-width: 430px) and (max-height: 932px) {
+  .heading-main {
+    font-size: 1.875rem; 
+  }
+  .heading-sub {
+    font-size: 1.25rem; 
+  }
+}
+
+/* 390 x 844 */
+@media (max-width: 390px) and (max-height: 844px) {
+  .heading-main {
+    font-size: 1.75rem; 
+  }
+  .heading-sub {
+    font-size: 1.25rem; 
+  }
+}
+
+/* 414 x 896 */
+@media (max-width: 414px) and (max-height: 896px) {
+  .heading-main {
+    font-size: 1.875rem; 
+  }
+  .heading-sub {
+    font-size: 1.25rem; 
+  }
+}
+
+/* 375 x 667 */
+@media (max-width: 375px) and (max-height: 667px) {
+  .heading-main {
+    font-size: 1.5rem; 
+  }
+  .heading-sub {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .hover-name {
+    font-size: 1.25rem; 
+  }
+  .hover-quote {
+    font-size: 0.875rem; 
+  }
+}
+
+
 
