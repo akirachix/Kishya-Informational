@@ -17,9 +17,9 @@ const Overview = () => {
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:flex gap-8">
         
-        <div className="md:mb-12 bg-teal-700 text-white rounded-3xl shadow-lg p-12 flex flex-col justify-between items-center mx-3 h-80">
+        <div className="md:mb-12 bg-teal-700 text-white rounded-3xl shadow-lg p-12 flex flex-col justify-between items-center mx-3 h-100">
           <Image 
-            src='/images/CheckList.png' 
+            src='/Images/CheckList.png' 
             alt="Planning" 
             width={56} 
             height={56} 
@@ -31,9 +31,9 @@ const Overview = () => {
           </p>
         </div>
       
-        <div className="md:mb-12 bg-teal-700 text-white rounded-3xl shadow-lg p-12 flex flex-col justify-between items-center mx-3 h-80">
+        <div className="md:mb-12 bg-teal-700 text-white rounded-3xl shadow-lg p-12 flex flex-col justify-between items-center mx-2 h-100">
           <Image 
-            src='/images/AB test.png' 
+            src='/Images/AB test.png' 
             alt="Testing" 
             width={56} 
             height={56} 
@@ -45,9 +45,9 @@ const Overview = () => {
           </p>
         </div>
 
-        <div className="md:mb-12 bg-teal-700 text-white rounded-3xl shadow-lg p-12 flex flex-col justify-between items-center mx-3 h-80">
+        <div className="md:mb-12 bg-teal-700 text-white rounded-3xl shadow-lg p-12 flex flex-col justify-between items-center mx-3 h-100">
           <Image 
-            src='/images/Intervention.png' 
+            src='/Images/Intervention.png' 
             alt="Intervention" 
             width={56} 
             height={56} 
