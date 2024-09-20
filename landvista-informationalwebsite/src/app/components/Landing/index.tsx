@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-
+import Image from 'next/image';
 
 const LandingPage: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,7 +11,6 @@ const LandingPage: React.FC = () => {
       subText: 'Out of 300 homeowners who purchase land, 213 are not aware of the flood risk probability of the area, thus increasing the chances of property and life loss.',
       buttonText: 'Visit Portal'
     },
-
     {
       image: '/images/station-flood.avif',
       title: 'Flood Preparedness',
@@ -42,10 +41,12 @@ const LandingPage: React.FC = () => {
             index === currentIndex ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <img
+          <Image
             src={slide.image}
             alt={`Slide ${index + 1}`}
-            className="w-full h-full object-cover"
+            layout="fill" 
+            objectFit="cover" 
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-90 p-4 md:p-6 lg:p-8 rounded-lg w-[95%] max-w-[750px] z-20">

@@ -1,7 +1,6 @@
 
 import LandvistaAbout from "./components/About";
 import Overview from "./components/Overview";
-import Image from "next/image";
 import Footer from "./components/Footer";
 import LandingPage from "./components/Landing";
 import Navbar from "./components/Navbar";
@@ -17,5 +16,6 @@ export default function Landvista(){
      <TeamSection/>
      <Footer/>
     </main>
+    
   );
 }
