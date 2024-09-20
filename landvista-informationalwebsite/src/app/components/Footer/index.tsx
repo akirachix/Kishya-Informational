@@ -45,12 +45,4 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="bg-custom-orange py-2 text-center text-[20px] text-white">
-        @ Copy Right 2024 LANDVISTA.
-      </div>
-    </footer>
-  );
-};
-
-export default Footer;
+      </div>cd
