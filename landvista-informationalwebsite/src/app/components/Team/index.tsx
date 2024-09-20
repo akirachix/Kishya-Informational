@@ -46,7 +46,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({ name, quote, image }) => {
 
 const TeamSection = () => {
   return (
-    <div id="team" className="w-full min-h-screen flex flex-col items-center justify-start py-8 overflow-hidden px-4 lg:px-10">
+    <div id="team" className="w-full min-h-screen flex flex-col items-center justify-start py-32 overflow-hidden px-4 lg:px-10">
       <h2 className="heading-main font-bold text-center mb-6 text-teal-600 text-[48px] sm:text-[53px] md:text-[58px] lg:text-[65px] xl:text-[65px]">
         Expertise Behind the Insight:
         <span className="heading-sub block font-light italic mt-2 text-[34px] sm:text-[38px] md:text-[42px] lg:text-[48px] xl:text-[48px] text-teal-500">

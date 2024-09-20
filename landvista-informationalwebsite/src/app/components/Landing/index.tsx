@@ -1,6 +1,13 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({
+  weight: ['500', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 const LandingPage: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -33,7 +40,7 @@ const LandingPage: React.FC = () => {
   }, [slides.length]);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className={`relative w-full h-screen overflow-hidden ${poppins.className}`}>
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -49,17 +56,17 @@ const LandingPage: React.FC = () => {
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-90 p-4 md:p-6 lg:p-8 rounded-lg w-[95%] max-w-[750px] z-20">
-              <h2 className="text-[#CA7558] text-lg md:text-xl lg:text-2xl font-bold mb-3">
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-70 p-8 md:p-10 lg:p-12 rounded-lg w-[85%] max-w-[900px] z-20">
+              <h2 className="text-[#CA7558] text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
                 {slide.title}
               </h2>
-              <div className="flex mb-3">
+              <div className="flex mb-6">
                 <div className="w-1 bg-red-500 mr-4"></div>
-                <p className="text-gray-700 text-xs md:text-sm lg:text-base">
+                <p className="text-gray-700 text-lg md:text-xl lg:text-2xl">
                   {slide.subText}
                 </p>
               </div>
-              <button className="bg-teal-600 hover:bg-teal-700 text-white py-1 px-3 rounded-full transition duration-300">
+              <button className="bg-teal-600 hover:bg-teal-700 text-white py-3 px-5 rounded-full transition duration-300 text-xl">
                 {slide.buttonText}
               </button>
             </div>
