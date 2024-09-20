@@ -12,9 +12,9 @@ const poppins = Poppins({
 
 const Overview = () => {
   return (
-    <div className={`${poppins.className} max-w-[1440px] mx-auto my-10 px-4 sm:px-8`}>
+    <div id='overview' className={`${poppins.className} max-w-[1440px] mx-auto my-10 px-4 sm:px-8`}>
 
-      <h1 className="text-teal-800 text-center mb-6 text-2xl sm:text-3xl md:text-4xl font-bold">
+      <h1 className="text-teal-800 text-center mb-6 text-2xl mt-20 sm:text-3xl md:text-4xl font-bold">
         Overview
       </h1>
       <div className="grid grid-cols-1 block sm:block  xl:flex gap-8">

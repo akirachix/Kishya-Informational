@@ -11,8 +11,9 @@ const poppins = Poppins({
 
 const LandvistaAbout: React.FC = () => {
   return (
-    <div className={`${poppins.className} text-3xl max-w-[90%] mx-auto px-2 sm:px-3 lg:px-4`}>
-      <h1 className={`text-teal-800 text-center mb-4 mt-5 text-2xl font-semibold xl:text-5xl`}>
+    <div id='about' className={`${poppins.className} text-3xl max-w-[90%] mx-auto px-2 sm:px-3 lg:px-4`}>
+
+      <h1 className={`text-teal-800 text-center mb-4 mt-20 text-2xl font-semibold xl:text-5xl`}>
         About LANDVISTA
       </h1>
       <section className={`mb-12 lg:block`}>
@@ -26,7 +27,7 @@ const LandvistaAbout: React.FC = () => {
               alt="LandVista Web-Portal"
               width={600}
               height={300}
-              className="h-42 w-full  rounded-[2rem] md:h-[330px] md:w-[600px] mx-auto" // Centering image
+              className="h-42 w-full  rounded-[2rem] md:h-[330px] md:w-[600px] mx-auto" 
             />
           </div>
           <div className={`md:w-full border-4 border-[#008080] p-8 md:p-12 rounded-[1rem] text-2xl md:text-4xl order-2`}>

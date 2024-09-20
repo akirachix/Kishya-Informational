@@ -1,6 +1,6 @@
 
-import LandvistaAbout from "./components/aboutLandVista/about";
-import Overview from "./components/overview/overview";
+import LandvistaAbout from "./components/About";
+import Overview from "./components/overview";
 import Image from "next/image";
 import Footer from "./components/footer";
 import LandingPage from "./components/Landing";
